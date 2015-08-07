@@ -1,0 +1,13 @@
+<table rows="1" cols="2" style="border:solid 1px;padding:50px;width:300px;margin:200px auto 0 auto;">
+    <tr>
+        <td><button id="btLogin" ng-click="loginController.login();" ng-hide="loginController.loggedIn">Login</button>
+            <button id="btLogout" ng-click="loginController.logout();" ng-show="loginController.loggedIn">Logout</button></td>
+        <td><input id="txtUsername" type="text" ng-model="loginController.username" ng-hide="loginController.loggedIn"/>
+            <span id="spUsername" ng-show="loginController.loggedIn">{{loginController.username}}</span></td>
+    </tr>
+    <tr>
+        <td style="text-align:right"><button id="callButton" ng-click="loginController.call()">&nbsp;Call&nbsp;</button></td>
+        <td><select id="selCallTargets" ng-model="callTarget" size="3" style="width: 130pt"
+                    ng-options="username for username in loginController.callTargets"></select></td>
+    </tr>
+</table>

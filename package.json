@@ -1,0 +1,33 @@
+{
+  "name": "movatar",
+  "version": "0.9.1",
+  "description": "Enables a user's WebRTC-connected devices to be found under a single URI that identifies the user.",
+  "main": "server/server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "node-static": "^0.7.6",
+    "socket.io": "^1.2.1",
+    "npm": "^1.4.28"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "jquery": "^2.1.4",
+    "karma": "^0.12.36",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.5",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "karma-safari-launcher": "^0.1.1",
+    "karma-story-reporter": "^0.3.1",
+    "ng-midway-tester": "^2.0.5",
+    "phantomjs": "^1.9.17"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Copeland",
+  "license": "ISC"
+}

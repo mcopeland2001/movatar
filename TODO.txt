@@ -1,0 +1,6 @@
+- Set up unit tests with Karma and Jasmine
+- Install AngularJS as npm dependency ?
+- Implement logout
+- Remove videochat when remote side hangs up
+- Call process should call a particular call target
+- Create server-side Movatar as implementation of Signaling

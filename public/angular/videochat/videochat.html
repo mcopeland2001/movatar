@@ -1,0 +1,27 @@
+<table width="100%" border="2px">
+    <tr>
+        <td><video id="localVideo" autoplay muted></video></td>
+        <td><video id="remoteVideo" autoplay muted></video></td>
+    </tr>
+    <tr>
+        <td>
+            <table rows="1" cols="2">
+                <tr>
+                    <td style="width:50pt;text-align:center"><button id="btSendData" disabled onfocus="this.value = '';"
+                            ng-click="videochatController.sendData();"
+                            ng-disabled="!videochatController.dataChannelReady">Send</button>
+                        <button id="btHangup" ng-click="videochatController.hangup();">Hangup</button></td>
+                    <td><textarea id="txtaSendData" style="width: 376pt" rows="4" disabled
+                                  ng-model="videochatController.sendText"
+                                  ng-disabled="!videochatController.dataChannelReady"></textarea></td>
+                </tr>
+            </table>
+        </td>
+        <td align="center"><textarea id="txtaReceiveData" style="width: 376pt" rows="4" disabled
+                                     ng-model="videochatController.receivedText"></textarea></td>
+    </tr>
+    <tr>
+        <td align="center"></td>
+        <td></td>
+    </tr>
+</table>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<title>Very simple WebRTC application with a Node.js signaling server</title>
+</head>
+
+<body ng-controller="MainController as main">
+
+<div id="mainDiv" ng-cloak>
+    <login ng-hide="inCall"></login>
+    <videochat ng-show="inCall"></videochat>
+</div>
+
+<script src='js/util.js'></script>
+<script src='js/polyfill.js'></script>
+<script src='/model/rtc/rtc-api.js'></script>
+<script src='/model/rtc/RTC.js'></script>
+<script src='/model/rtc/ChatRoom.js'></script>
+<script src='/socket.io/socket.io.js'></script>
+<script src='/angular/NonAngularDeps.js'></script>
+<script src='/angular/module.js'></script>
+<script src='/angular/login/login.js'></script>
+<script src='/angular/videochat/videochat.js'></script>
+</body>
+</html>
+
